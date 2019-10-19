@@ -1,0 +1,8 @@
+epsilon		= 1.0
+partRad		= 32
+# set tBSteps to 0 to run indefinitely
+tBSteps		= 200
+lsize		= 100000
+# set rSeed to 0 to seed with the current time
+rSeed		= 0
+nParticles	= 1000

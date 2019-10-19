@@ -1,0 +1,13 @@
+2012/12/01 13:12 - Landscape generated from Gaussian distributed RNG and spherical array.
+				 - Currently not implemented: Periodic boundary mirrors, rescaling of epsilon.
+		   14:54 - Config file reading/writing/parsing working
+		   15:35 - Particle initialisation tested
+		   17:06 - Initial dynamics loop implemented with Metropolis step
+2012/12/03 12:01 - Implemented rescaling of landscape to reflect the desired value of epsilon
+		   15:43 - The state vector file does not need to be updated with the landscape and the initial particle positions each time
+		           The only part which changes is the current time and the current particle positions
+		           In fact, once the landscape has been created, epsilon is not needed anymore.
+		   18:14 - Implemented periodic boundary in landscape and in particle positions
+2012/12/04 19:06 - Starting to implement the state persistence routines, wondering how I can save the random seed
+                   turns out that using a custom RNG might be the best way to go. DOn't worry about it for
+                   now but maybe get a copy of Mersenne Twister and add it to the random factory.

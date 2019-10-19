@@ -1,0 +1,10 @@
+C++ simulation:
+	Landscape generation
+		Kernel = spherical array
+		Landscape = Kernel convoluted with random numbers
+		Rescale landscape to desired value of epsilon
+
+	Functions:
+		makeKernel
+		Normalised Random numbers
+		1D convolution
