@@ -1,4 +1,4 @@
-CPPFLAGS=-Wall -Wextra -O2
+CPPFLAGS=-Wall -Wextra -O2 -fpermissive -Wsign-compare
 
 rough_sim: rough_sim.o randn.o landscape.o
 	g++ $(CPPFLAGS) -o rough_sim rough_sim.o landscape.o randn.o 
