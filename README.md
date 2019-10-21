@@ -22,9 +22,11 @@ make clean && make
 - Config file reading/writing/parsing working
 - Particle initialisation tested
 - Initial dynamics loop implemented with Metropolis step
-2012/12/03 12:01 
+
+2012/12/03
 - Implemented rescaling of landscape to reflect the desired value of epsilon
 - The state vector file does not need to be updated with the landscape and the initial particle positions each time. The only part which changes is the current time and the current particle positions. In fact, once the landscape has been created, epsilon is not needed anymore.
 - Implemented periodic boundary in landscape and in particle positions
+
 2012/12/04
 - Starting to implement the state persistence routines, wondering how I can save the random seed. Turns out that using a custom RNG might be the best way to go. Don't worry about it for now but maybe get a copy of Mersenne Twister and add it to the random factory.
