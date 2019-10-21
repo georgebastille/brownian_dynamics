@@ -13,4 +13,4 @@ randn.o: randn.cpp randn.h
 	g++ $(CPPFLAGS) -c randn.cpp
 	
 clean:
-	rm -f *.o
+	rm -f *.o *.bin landscape moments rough_sim
